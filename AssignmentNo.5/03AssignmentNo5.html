@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Design</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(to right, #001a66, #0033cc);
+    padding:15px 20px;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+
+/* LOGO BOX */
+.logo{
+    background:#0044cc;
+    padding:10px 20px;
+}
+
+/* MAIN SECTION */
+.container{
+    display:flex;
+    height:500px;
+}
+
+/* LEFT SIDEBAR */
+.sidebar{
+    width:30%;
+    background:linear-gradient(#2a6df4, #1a2a80);
+    padding:15px;
+    color:white;
+}
+
+.sidebar .img-box{
+    height:150px;
+    background:#1e90ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.sidebar p{
+    margin:10px 0;
+    border-bottom:1px solid #fff;
+    padding-bottom:5px;
+}
+
+/* MAIN CONTENT */
+.main{
+    width:70%;
+    background:#001a66;
+    padding:15px;
+    color:white;
+}
+
+.main .big-img{
+    height:200px;
+    background:#0033cc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:10px;
+}
+
+.tagline{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.box{
+    display:flex;
+    margin:10px 0;
+    border:1px solid white;
+}
+
+.box .title{
+    width:30%;
+    background:#3355ff;
+    padding:10px;
+}
+
+.box .desc{
+    width:70%;
+    padding:10px;
+}
+
+/* FOOTER */
+.footer{
+    background:#001155;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Career</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="logo">Place Logo Here</div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="img-box"><img src="./fork.jpg" height="150px"  width="400px"></div>
+
+        <p>Place Any Description Here</p>
+        <p>Place Any Description Here</p>
+        <p>Place Any Description Here</p>
+        <p>Place Any Description Here</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="big-img"><img src="./fork2.png" height="200px" width="1000px" alt=""></div>
+
+        <div class="tagline">Place Image Description or Tagline Here</div>
+
+        <div class="box">
+            <div class="title">Title Name 01</div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="box">
+            <div class="title">Title Name 02</div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="box">
+            <div class="title">Title Name 03</div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="box">
+            <div class="title">Title Name 04</div>
+            <div class="desc">Description</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    Enter Your Name Here <br>
+    Enter Address Here <br>
+    Enter Mobile No. Here
+</div>
+
+</body>
+</html>
